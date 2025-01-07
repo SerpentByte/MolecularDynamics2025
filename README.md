@@ -21,7 +21,7 @@ Windows users need to perform either of the two things below to get an access to
 - **SSH via MobaXterm**: Another way is to obtain access to a linux server and connect to it via SSH. [MobaXterm](https://mobaxterm.mobatek.net/) is a ssh client for windows. I recommend to download the installer version and not the portable version. But I leave this choice to you. Access to a Linux server will be provided and the IP address and the login credentials will be announded in the Google Classroom. But connection to the server can only be eshtablished if you are within the institute network. In case you are outside the institute netwrok, you would need to connect to the VPN before you can access the server. Therefor using MobaXterm will require a good internet connectivity.</br>
 
 ### Getting used to the Terminal
-We shall decdicate a whole class for learning how to work with the terminal. The directory [linux_commands]() contains details on a few basic and most useful commands. We will require this everytime we use linux.
+We shall decdicate a whole class for learning how to work with the terminal. The directory [linux_commands](https://github.com/SerpentByte/MolecularDynamics2025/tree/main/linux_commands) contains details on a few basic and most useful commands. We will require this everytime we use linux.
 
 ### Getting started with Python
 We shall discuss basic molecular dynamics algorithms in detail during the lectures. However, if we do not implement them, a complete understanding of the algorithms cannot be achieved. Hence we shall also implement them using a programming language of choice. </br>
