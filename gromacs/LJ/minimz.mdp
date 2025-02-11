@@ -1,0 +1,14 @@
+integrator              = steep
+emtol                   = 10.0
+nsteps                  = 5000
+nstlist                 = 10
+pbc                     = xyz
+cutoff-scheme           = Verlet
+rlist                   = 2.5
+vdwtype                 = Cut-off
+vdw-modifier            = Force-switch
+rvdw_switch             = 2.2
+rvdw                    = 2.5
+coulombtype             = PME
+rcoulomb                = 3.0
+;

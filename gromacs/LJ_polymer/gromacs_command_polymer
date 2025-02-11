@@ -1,0 +1,19 @@
+# information about the system
+   conf_pol.gro: Initial configuration of 32-bead polymer.
+   md.mdp: simulation parameter files for MD simulation
+   topol.top: The topology files with details of bond,angle and non-bonding term
+
+
+#   md simulation for 500 ps in periodic boundary condition
+
+    gmx grompp -f md.mdp -c conf_pol.gro -p topol.top -o md.tpr
+    gmx mdrun -v -s md.tpr -deffnm md
+
+# To calculate energies
+    gmx energy -f md.edr
+
+# select 5,6,7 for potential energy,kinetic energy and total energy
+
+# To calculate the radius of gyration of the polymer
+   gmx polystat -s md.tpr -f md.trr -o polystat.xvg
+  # select 2 for polymer

@@ -1,0 +1,26 @@
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs     fudgeLJ   fudgeQQ
+1                  3               no           1.0       1.0
+
+[ atomtypes ]
+;name   mass      charge   ptype   sigma         epsilon
+ Ar     1.0       0.000     A      1.000         1.000
+
+
+
+[ moleculetype ]
+; name  nrexcl
+Ar          1
+
+[ atoms ]
+; nr    type    resnr   residu  atom    cgnr    charge  mass
+     1        Ar      1      Ar    Ar      1      0.000    1.0   
+
+
+
+  [ system ]
+216 LJ system
+
+[ molecules ]
+; Compound      #mols
+Ar        216

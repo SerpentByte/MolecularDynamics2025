@@ -1,0 +1,135 @@
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs     fudgeLJ   fudgeQQ
+1                  3               no           1.0       1.0
+
+
+[ atomtypes ]
+;name   mass      charge   ptype   sigma         epsilon
+CHP   14.0        0.000     A      0.4           1.0
+
+[ bondtypes ]
+; i    j           funct     b0 [nm]    k_b [kJ mol-1 nm-2]
+#define bond_POL     1      0.153     330000.0
+
+[ angletypes ]
+;  ai    aj    ak   funct     theta0 [deg]   k_theta [kJ mol-1]
+#define angle_POL     2       111.0           100.0     
+
+
+[ moleculetype ]
+; Name            nrexcl  exclusion of first and second nearest neighbors
+POL                 2
+
+[ atoms ]
+;nr  type  resnr residue  atom   cgnr  charge  mass
+1    CHP     1     POL    C1     1     0.0    14.0
+2    CHP     1     POL    C2     2     0.0    14.0
+3    CHP     1     POL    C3     3     0.0    14.0
+4    CHP     1     POL    C4     4     0.0    14.0
+5    CHP     1     POL    C5     5     0.0    14.0
+6    CHP     1     POL    C6     6     0.0    14.0
+7    CHP     1     POL    C7     7     0.0    14.0
+8    CHP     1     POL    C8     8     0.0    14.0
+9    CHP     1     POL    C9     9     0.0    14.0
+10   CHP     1     POL    C10     10    0.0    14.0
+11   CHP     1     POL    C11     11    0.0    14.0
+12   CHP     1     POL    C12     12    0.0    14.0
+13   CHP     1     POL    C13     13    0.0    14.0
+14   CHP     1     POL    C14     14    0.0    14.0
+15   CHP     1     POL    C15     15    0.0    14.0
+16   CHP     1     POL    C16     16    0.0    14.0
+17   CHP     1     POL    C17     17    0.0    14.0
+18   CHP     1     POL    C18     18    0.0    14.0
+19   CHP     1     POL    C19     19    0.0    14.0
+20   CHP     1     POL    C20     20    0.0    14.0
+21   CHP     1     POL    C21     21    0.0    14.0
+22   CHP     1     POL    C22     22    0.0    14.0
+23   CHP     1     POL    C23     23    0.0    14.0
+24   CHP     1     POL    C24     24    0.0    14.0
+25   CHP     1     POL    C25     25    0.0    14.0
+26   CHP     1     POL    C26     26    0.0    14.0
+27   CHP     1     POL    C27     27    0.0    14.0
+28   CHP     1     POL    C28     28    0.0    14.0
+29   CHP     1     POL    C29     29    0.0    14.0
+30   CHP     1     POL    C30     30    0.0    14.0
+31   CHP     1     POL    C31     31    0.0    14.0
+32   CHP     1     POL    C32     32    0.0    14.0
+
+
+[ bonds ]
+;  ai    aj   funct          b0           kb
+    1     2       bond_POL
+    2     3       bond_POL
+    3     4       bond_POL
+    4     5       bond_POL
+    5     6       bond_POL
+    6     7       bond_POL
+    7     8       bond_POL
+    8     9       bond_POL
+    9     10      bond_POL
+    10    11      bond_POL
+    11    12      bond_POL
+    12    13      bond_POL
+    13    14      bond_POL
+    14    15      bond_POL
+    15    16      bond_POL
+    16    17      bond_POL
+    17    18      bond_POL
+    18    19      bond_POL
+    19    20      bond_POL
+    20    21      bond_POL
+    21    22      bond_POL
+    22    23      bond_POL
+    23    24      bond_POL
+    24    25      bond_POL
+    25    26      bond_POL
+    26    27      bond_POL
+    27    28      bond_POL
+    28    29      bond_POL
+    29    30      bond_POL
+    30    31      bond_POL
+    31    32      bond_POL
+
+
+[ angles ]
+;  ai    aj    ak     funct         angle          k
+    1     2     3          angle_POL
+    2     3     4          angle_POL
+    3     4     5          angle_POL
+    4     5     6          angle_POL
+    5     6     7          angle_POL
+    6     7     8          angle_POL
+    7     8     9          angle_POL
+    8     9     10         angle_POL
+    9     10    11         angle_POL
+    10    11    12         angle_POL
+    11    12    13         angle_POL
+    12    13    14         angle_POL
+    13    14    15         angle_POL
+    14    15    16         angle_POL
+    15    16    17         angle_POL
+    16    17    18         angle_POL
+    17    18    19         angle_POL
+    18    19    20         angle_POL
+    19    20    21         angle_POL
+    20    21    22         angle_POL
+    21    22    23         angle_POL
+    22    23    24         angle_POL
+    23    24    25         angle_POL
+    24    25    26         angle_POL
+    25    26    27         angle_POL
+    26    27    28         angle_POL
+    27    28    29         angle_POL
+    28    29    30         angle_POL
+    29    30    31         angle_POL
+    30    31    32         angle_POL
+
+
+
+[ system ]
+; Name
+POL 
+  
+[ molecules ]
+; Compound        #mols
+POL                 1

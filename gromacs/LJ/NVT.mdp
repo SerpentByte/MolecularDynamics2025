@@ -1,0 +1,38 @@
+integrator              = md
+dt                      = 0.001
+nsteps                  = 500000
+nstlog                  = 1000
+nstxout                 = 1000
+nstvout                 = 1000
+nstfout                 = 0
+nstcalcenergy           = 0
+nstenergy               = 1000
+nstxout-compressed 	= 000
+compressed-x-precision	= 1000
+;
+pbc                     = xyz
+cutoff-scheme           = Verlet
+nstlist                 = 20
+rlist                   = 2.5
+coulombtype             = cut-off
+rcoulomb                = 2.5
+vdwtype                 = Cut-off
+vdw-modifier            = Force-switch
+rvdw_switch             = 2.0
+rvdw                    = 2.5
+
+tcoupl                   = V-rescale
+; Groups to couple separately
+tc-grps                  = System
+; Time constant (ps) and reference temperature (K)
+tau-t                    = 1.0
+ref-t                    = 87.36
+;
+;
+nstcomm                 = 1
+comm_mode               = linear
+;
+; GENERATE VELOCITIES FOR STARTUP RUN
+gen-vel                  = yes
+gen-temp                 = 87.36
+gen-seed                 = -1
