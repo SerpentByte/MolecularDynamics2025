@@ -1,0 +1,23 @@
+  gromacs webpage: http://www.gromacs.org/
+
+ # Units: length: nanometer, energy: kJ/mol, time: picosecond
+ # To learn the use of any gromacs commands :
+   gmx grompp -h
+ # generate a system of 216 Argon particles within a dimension of 4 X 4 X 4 nm
+ #
+    gmx insert-molecules -ci LJ.gro -box 4 4 4 -nmol 216 -o 216_LJ.gro
+
+ # energy minimization to remove bad overlaps
+
+    gmx grompp -f minimz.mdp -c 216_LJ.gro -p topol.top -o em.tpr
+    gmx mdrun -s em.tpr -deffnm em -v -nt 2
+
+#   md simulation for 500 ps in periodic boundary condition
+
+    gmx grompp -f md.mdp -c em.gro -p topol.top -o md.tpr
+    gmx mdrun -v -s md.tpr -deffnm md -nt 2
+
+# To calculate energies
+    gmx energy -f md.edr
+# To calculate radial distribution function between LJ particles
+    gmx rdf -f md.trr -s md.tpr -xvg none -o rdf.xvg ( select 0, 0, control-d)

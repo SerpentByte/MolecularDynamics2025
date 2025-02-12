@@ -44,9 +44,9 @@ GROMACS:      gmx mdrun, version 2024
 Executable:   /home/wasim/programs/gmx-2024/bin/gmx
 Data prefix:  /home/wasim/programs/gmx-2024
 Working dir:  /home/wasim/Documents/teaching/MolecularDynamics2025/gromacs/LJ
-Process ID:   12323
+Process ID:   5010
 Command line:
-  gmx mdrun -v -deffnm em
+  gmx mdrun -v -deffnm em -nsteps 100000
 
 GROMACS version:     2024
 Precision:           mixed
@@ -156,7 +156,7 @@ Input Parameters:
    comm-mode                      = Linear
    nstcomm                        = 100
    bd-fric                        = 0
-   ld-seed                        = 259601385
+   ld-seed                        = 1919734519
    emtol                          = 10
    emstep                         = 0.01
    niter                          = 20
@@ -316,6 +316,10 @@ annealing-npoints:           0
    nfreeze:           N           N           N
    energygrp-flags[  0]: 0
 
+The -nsteps functionality is deprecated, and may be removed in a future version. Consider using gmx convert-tpr -nsteps or changing the appropriate .mdp file field.
+
+Overriding nsteps with value passed on the command line: 100000 steps
+
 When checking whether update groups are usable:
   No constraints or virtual sites are in use, so it is best not to use update groups
 
@@ -365,12 +369,12 @@ Note that activating steepest-descent energy minimization via the integrator .md
 Initiating Steepest Descents
 
 Atom distribution over 1 domains: av 216 stddev 0 min 216 max 216
-Started Steepest Descents on rank 0 Tue Feb 11 10:59:07 2025
+Started Steepest Descents on rank 0 Wed Feb 12 15:15:34 2025
 
 
 Steepest Descents:
    Tolerance (Fmax)   =  1.00000e+01
-   Number of steps    =         5000
+   Number of steps    =       100000
            Step           Time
               0        0.00000
 
@@ -730,5 +734,5 @@ Norm of force     =  2.1451421e+00
 
  av. #atoms communicated per step for force:  2 x 0.0
 
-Finished mdrun on rank 0 Tue Feb 11 10:59:07 2025
+Finished mdrun on rank 0 Wed Feb 12 15:15:34 2025
 
