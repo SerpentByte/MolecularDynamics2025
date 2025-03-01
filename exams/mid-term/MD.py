@@ -63,8 +63,14 @@ pe = 0.0
 ke = 0.0
 te = 0.0
 
-alpha = 0.0
+# ============================================= #
+# change these values as per the question paper #
+
+alpha = 0.0 
 beta = 0.0
+
+# change these values as per the question paper #
+# ============================================= #
 
 pe_shift = potential(rcut, sig, ep, alpha, beta)
 
