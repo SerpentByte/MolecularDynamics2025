@@ -1,4 +1,4 @@
-integrator              = md
+integrator              = md-vv
 dt                      = 0.001
 nsteps                  = 500000
 nstlog                  = 1000

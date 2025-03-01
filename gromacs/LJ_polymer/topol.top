@@ -5,7 +5,7 @@
 
 [ atomtypes ]
 ;name   mass      charge   ptype   sigma         epsilon
-CHP   14.0        0.000     A      0.4           1.0
+CHP   14.0        0.000     A      0.2           1.0
 
 [ bondtypes ]
 ; i    j           funct     b0 [nm]    k_b [kJ mol-1 nm-2]
@@ -13,11 +13,11 @@ CHP   14.0        0.000     A      0.4           1.0
 
 [ angletypes ]
 ;  ai    aj    ak   funct     theta0 [deg]   k_theta [kJ mol-1]
-#define angle_POL     2       111.0           100.0     
+#define angle_POL     2       111.0           00.0     
 
 
 [ moleculetype ]
-; Name            nrexcl  exclusion of first and second nearest neighbors
+; Name            nrexcl  exclusion of first and second bonded neighbors
 POL                 2
 
 [ atoms ]
@@ -58,6 +58,7 @@ POL                 2
 
 [ bonds ]
 ;  ai    aj   funct          b0           kb
+;   1     2     1            0.153        330000.0
     1     2       bond_POL
     2     3       bond_POL
     3     4       bond_POL
@@ -93,6 +94,7 @@ POL                 2
 
 [ angles ]
 ;  ai    aj    ak     funct         angle          k
+;   1     2     3      2            111.0          100.0     
     1     2     3          angle_POL
     2     3     4          angle_POL
     3     4     5          angle_POL
