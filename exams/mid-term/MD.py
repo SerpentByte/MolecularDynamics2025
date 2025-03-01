@@ -63,8 +63,8 @@ pe = 0.0
 ke = 0.0
 te = 0.0
 
-alpha = 24.0
-beta = 18.0
+alpha = 0.0
+beta = 0.0
 
 pe_shift = potential(rcut, sig, ep, alpha, beta)
 
