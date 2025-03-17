@@ -1,5 +1,5 @@
 # MolecularDynamics2025
-This repo contains information and materials related to the introductory course to molecular dynamics. The course was conducted between January-April of 2025.
+This repo contains information and materials related to the introductory course to molecular dynamics. The course was conducted between January-April of 2025 at TIFR Hyderabad.
 
 ## Getting started
 ### Requirements
